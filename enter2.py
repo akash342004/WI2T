@@ -87,7 +87,7 @@ def format_text(text, line_length=80):
 
 # Load detection model
 custom_objects = {'KerasLayer': hub.KerasLayer}
-model = load_model(r'D:\AKASH\FINAL YEAR PROJECT WEB BASED IMAGE TO TEXT CONVERSION USING ADVANCED DEEP LEARNING\detector2.keras', custom_objects=custom_objects)
+model = load_model(r'detector2.keras', custom_objects=custom_objects)
 
 @app.route('/', methods=['GET', 'POST'])
 def intro_start():
