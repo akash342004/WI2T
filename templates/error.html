@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Error Downloading</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E6F7FF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column; /* Center elements vertically */
+        }
+
+        .circle {
+            background-color: #FF0000; /* Red background color for the circle */
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cross {
+            color: #fff; /* White color for the cross mark */
+            font-size: 64px; /* Adjust the font size as needed */
+        }
+
+        h1 {
+            color: #333;
+            font-size: 36px; /* Large font size for "Error Downloading Your File" */
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 20px 40px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 24px;
+            margin-top: 20px; /* Space between the heading and button */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle">
+        <div class="cross">&#10008;</div>
+    </div>
+
+    <h1>{{n}}</h1>
+
+    <form action="/">
+    <button id="download-button">Try Again</button>
+    </form>
+</body>
+
+</html>
