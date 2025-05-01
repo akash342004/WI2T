@@ -15,7 +15,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # PATH ALLOCATION
-data_dir = os.path.join(r'D:\AKASH\FINAL YEAR PROJECT WEB BASED IMAGE TO TEXT CONVERSION USING ADVANCED DEEP LEARNING\Data_language/data')
+data_dir = os.path.join(r'Data_language/data')
 classes = os.listdir(data_dir)
 print("Classes:", classes)
 
@@ -53,7 +53,7 @@ def load_data(folder):
     return images, labels
 
 # Load and preprocess image data
-images, labels = load_data(r'D:\AKASH\FINAL YEAR PROJECT WEB BASED IMAGE TO TEXT CONVERSION USING ADVANCED DEEP LEARNING\Data_language\data')
+images, labels = load_data(r'Data_language\data')
 
 # Split data into train and test sets
 train_images, test_images, train_labels, test_labels = train_test_split(
