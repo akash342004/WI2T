@@ -1,4 +1,3 @@
-Here is a complete README.md for your project:
 
 
 ---
